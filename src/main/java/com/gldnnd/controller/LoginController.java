@@ -8,9 +8,10 @@ import com.gldnnd.service.UserServiceImpl;
 import com.gldnnd.utils.web.WebContent;
 
 @Controller
-@RequestMapping("userController")
-public class UserController extends WebContent{
+@RequestMapping("loginController")
+public class LoginController extends WebContent {
 
 	@Autowired
 	private UserServiceImpl userServiceImpl;
+	
 }
