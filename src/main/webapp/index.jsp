@@ -43,8 +43,27 @@ li.login,li.registered,li.history,li.contribute {
 }
 .reasch{
 	position:absolute; 
-	bottom:0px;
-	margin-bottom: 10px;
+	bottom:20px;
+}
+
+.top-bottom-nav-li{
+	float:left;
+	list-style-type:none;
+	margin: 10px 20px 0px 20px;
+	position: relative;
+}
+#mod-nav{
+	margin: auto;
+}
+.v-item{
+	float:left;
+	list-style-type:none;
+    position: relative;
+    margin: 10px 10px;
+}
+.v-item img{
+	width: 160px;
+    height: 100px;
 }
 </style>
 </head>
@@ -52,31 +71,83 @@ li.login,li.registered,li.history,li.contribute {
 	<!-- 页面内容容器 -->
 	<div class="container-fluid">
 		<div class="top-container">
-			<div class="row" id="b-header-mask">
-				<div class="col-md-6">
-					<ul class="top-ul-left">
-						<li class="phone-client"><a href="#">移动端</a></li>
-						<li class="live"><a href="#">直播</a></li>
-						<li class="comic"><a href="#">番剧</a></li>
-						<li class="home"><a href="#">主站</a></li>
-					</ul>
-				</div>
-				<div class="col-md-6">
-					<ul class="top-ul-right">
-						<li class="login">登录</li>
-						<li class="registered">注册</li>
-						<li class="history">历史</li>
-						<li class="contribute">投稿</li>
-					</ul>
+			<div class="row">
+				<div id="b-header-mask">
+					<div class="col-md-6">
+						<ul class="top-ul-left">
+							<li class="phone-client"><a href="#">移动端</a></li>
+							<li class="live"><a href="#">直播</a></li>
+							<li class="comic"><a href="#">番剧</a></li>
+							<li class="home"><a href="#">主站</a></li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<ul class="top-ul-right">
+							<li class="login">登录</li>
+							<li class="registered">注册</li>
+							<li class="history">历史</li>
+							<li class="contribute">投稿</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="reasch row">
-				<input id="index-reasch"/>
+				<div class="col-lg-1 col-md-2" style="float:right ">
+					<input id="index-reasch"/>
+				</div>
 			</div>
 		</div>
+		<div class="top-bottom-nav row">
+			<div class="col-md-2"></div>
+			<div class="col-md-10" id="mod-nav">
+				<ul>
+					<li class="top-bottom-nav-li">首页</li>
+					<li class="top-bottom-nav-li">首页</li>
+					<li class="top-bottom-nav-li">首页</li>
+					<li class="top-bottom-nav-li">首页</li>
+					<li class="top-bottom-nav-li">首页</li>
+					<li class="top-bottom-nav-li">首页</li>
+					<li class="top-bottom-nav-li">首页</li>
+				</ul>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
 		
-		<div id="item_list" class="item_list">
-		
+		<div id="item_list" class="item_list col-md-12">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<ul>
+					<li class="v-item">
+						<img style="width: 400px; height: 222px;" 
+						alt="#" src="http://i0.hdslb.com/bfs/archive/96770b1901804d50bb5eacff8d9c081bcdb672af.jpg@.webp">
+					</li>
+					<li class="v-item">
+						<img alt="#" src="http://i2.hdslb.com/bfs/archive/943a9da192e0b32caab134e4bcaccc8c3f65b61a.jpg@320w_200h.webp">
+					</li>
+					<li class="v-item">
+						<img alt="#" src="http://i2.hdslb.com/bfs/archive/943a9da192e0b32caab134e4bcaccc8c3f65b61a.jpg@320w_200h.webp">
+					</li>
+					<li class="v-item">
+						<img alt="#" src="http://i2.hdslb.com/bfs/archive/943a9da192e0b32caab134e4bcaccc8c3f65b61a.jpg@320w_200h.webp">
+					</li>
+					<li class="v-item">
+						<img alt="#" src="http://i2.hdslb.com/bfs/archive/943a9da192e0b32caab134e4bcaccc8c3f65b61a.jpg@320w_200h.webp">
+					</li>
+					<li class="v-item">
+						<img alt="#" src="http://i2.hdslb.com/bfs/archive/943a9da192e0b32caab134e4bcaccc8c3f65b61a.jpg@320w_200h.webp">
+					</li>
+					<li class="v-item">
+						<img alt="#" src="http://i2.hdslb.com/bfs/archive/943a9da192e0b32caab134e4bcaccc8c3f65b61a.jpg@320w_200h.webp">
+					</li>
+					<li class="v-item">
+						<img alt="#" src="http://i2.hdslb.com/bfs/archive/943a9da192e0b32caab134e4bcaccc8c3f65b61a.jpg@320w_200h.webp">
+					</li>
+					<li class="v-item">
+						<img alt="#" src="http://i2.hdslb.com/bfs/archive/943a9da192e0b32caab134e4bcaccc8c3f65b61a.jpg@320w_200h.webp">
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-2"></div>
 		</div>
 		
 		<div id="foot" class="pc_show" style="max-height: 200px;">
